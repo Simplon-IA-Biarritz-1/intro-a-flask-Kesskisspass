@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction</title>
+</head>
+<body>
+    <div class="col-6 offset-3 text-center">
+
+        <h1>Prédiction</h1>
+        <div class="jumbotron">
+
+            <div class="mb-5">
+                <h3>Image uploadée:</h3>
+                <img src={{img_path}} alt="Image uploadée">
+            </div>
+            <p>L'image uploadée représente un  {{ prediction }}</p>
+        </div>
+        <p><a href="{{url_for('ex8')}}">charger une autre image</a></p>
+    </div>
+</body>
+</html>

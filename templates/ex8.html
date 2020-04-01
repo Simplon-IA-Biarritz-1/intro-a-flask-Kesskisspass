@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction</title>
+</head>
+<body>
+    <div class="col-6 offset-3 text-center">
+
+        <h1>Upload image</h1>
+        <p>Info: dans le dossier static/img il y  a des png de chiffres manuscrits</p>
+        <form class="form-inline" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <input type="file" class="form-control-file" name="file">
+              </div>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+        {% if filepath %}
+            <p>Le chemin du fichier est : {{filepath}}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

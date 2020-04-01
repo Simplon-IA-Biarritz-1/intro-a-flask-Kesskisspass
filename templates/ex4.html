@@ -7,7 +7,7 @@
     </head>
 
     <body>
-        <h1>Veuillez remplir le formulaire</h1>
+        <h1 class="text-center">Veuillez remplir le formulaire</h1>
         <div class="col-6 offset-3">
 
             <form method="POST">
@@ -38,6 +38,11 @@
                   </div>
                 <button type="submit" class="btn btn-primary float-right">Submit</button>
               </form>
+              {% if warning %}
+                <div class="alert alert-warning mt-3 alert-dismissible fade show" role="alert">
+                  {{ warning }}
+                </div>
+              {% endif %}
         </div>
     </body>
 </html>

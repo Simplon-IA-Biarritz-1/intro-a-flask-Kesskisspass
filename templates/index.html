@@ -7,16 +7,19 @@
     <title>Accueil</title>
 </head>
 <body>
-    <h1>Intro Flask</h1>
-    <ul>
-        <li><a href="{{ url_for('ex1') }}" target="_blank">Ex1</a></li>
-        <li><a href="{{ url_for('ex2') }}" target="_blank">Ex2</a></li>
-        <li><a href="{{ url_for('ex31')}}" target="_blank">Ex3</a></li>
-        <li><a href="{{ url_for('ex4') }}" target="_blank">Ex4</a></li>
-        <li><a href="{{ url_for('ex5') }}" target="_blank">Ex5</a></li>
-        <li><a href="{{ url_for('ex6') }}" target="_blank">Ex6</a></li>
-        <li><a href="{{ url_for('ex7') }}" target="_blank">Ex7</a></li>
-        <li><a href="{{ url_for('ex8') }}" target="_blank">Ex8</a></li>
-    </ul>
+    <div class="col-4 offset-4 text-center">
+
+        <h1>Intro Flask</h1>
+        <ul class="text-left">
+            <li><a href="{{ url_for('ex1') }}" target="_blank">Ex1: hello world</a></li>
+            <li><a href="{{ url_for('ex2') }}" target="_blank">Ex2: hello world + CSS</a></li>
+            <li><a href="{{ url_for('ex31')}}" target="_blank">Ex3: 2 pages + link</a></li>
+            <li><a href="{{ url_for('ex4') }}" target="_blank">Ex4: Form + welcome</a></li>
+            <li><a href="{{ url_for('ex5') }}" target="_blank">Ex5: Form + write in db</a></li>
+            <li><a href="{{ url_for('ex6') }}" target="_blank">Ex6: Read db</a></li>
+            <li><a href="{{ url_for('ex7') }}" target="_blank">Ex7: simple auth + read csv</a></li>
+            <li><a href="{{ url_for('ex8') }}" target="_blank">Ex8: Image prediction</a></li>
+        </ul>
+    </div>
 </body>
 </html>

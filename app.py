@@ -73,7 +73,7 @@ def text_box():
 # Ex 5
 @app.route('/ex5')
 def ex5():
-    return render_template("ex4.html")
+    return render_template("ex4.html", warning="la bdd sql test_user est nécessaire")
 
 @app.route('/ex5/refused')
 def refused():

@@ -6,7 +6,7 @@
 - ex7: un ou plusieurs fichiers .csv
 - ex8: des images de nombre, le modèle fonctionne mieux avec ces [images](https://github.com/myleott/mnist_png/blob/master/mnist_png.tar.gz)
 
-TODO
+## TODO
 - [ ] Simplifier les templates en utilisant des blocks header, footer...
 - [ ] Uniformiser la mise en page
 - [ ] Page d'accueil explicative
